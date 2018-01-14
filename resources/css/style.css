@@ -1,0 +1,49 @@
+/* Universal Styles */
+html {
+  font-family: "Helvetica", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Header */
+header  {
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0 24px;
+}
+
+header .logo img {
+  height: 2rem;
+}
+
+nav ul li {
+  padding-left: 16px;
+}
+
+/* Banner */
+.banner {
+  background-color: lightgray;
+}
+
+.media {
+  width: 60%
+  height: 200px;
+  overflow: hidden;
+}
+
+.media img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 32px 24px;
+}
+
+.button {
+  color: white;
+  background-color: slategray;
+
+}

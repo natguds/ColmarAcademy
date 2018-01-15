@@ -5,7 +5,8 @@ html {
 
 body {
   min-width: 475px;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Arial", sans-serif;
+  color: #303030;
 }
 
 h1 {
@@ -16,12 +17,13 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: bold;
-  padding: 2rem 0;
-
+  padding-top: 2rem;
 }
 
 h4 {
   font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
 }
 
 .container {
@@ -31,9 +33,13 @@ h4 {
 
 .media {
   width: 60%;
-  height: 500px;
+  height: auto;
   overflow: hidden;
   padding: 0 1.5rem;
+}
+
+.section-title {
+  text-align: center;
 }
 
 /* Header */
@@ -85,10 +91,10 @@ nav ul li {
 
 .banner .start {
   max-width: 40%;
-  color: #303030;
 }
 
 .banner .button {
+  width: 70%;
   color: white;
   background-color: #303030;
   padding: 1rem 0;
@@ -96,15 +102,24 @@ nav ul li {
 }
 
 .banner h4 {
+  width: 70%;
   line-height: 1.5;
   padding: 2rem 0;
 }
 
+.banner h1 {
+  width: 70%;
+}
+
+
+
 
 /* Info */
 .info {
-  margin: 2rem 0;
+  display: flex;
+  padding: 2rem 0;
 }
+
 .info .media img {
   max-width: 100%;
   height: auto;
@@ -115,10 +130,23 @@ nav ul li {
   max-width: 40%;
 }
 
+.info-blocks .container {
+  border: 1px solid lightgray;
+}
+
 .info-blocks img {
-  width: 35%;
+  max-width: 35%;
   height: auto;
   padding: 1rem;
+}
+
+.info .class {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.info h2 {
+  padding-bottom: 1.5rem;
 }
 
 .info-text {
@@ -128,22 +156,45 @@ nav ul li {
 .info-text p {
   color: gray;
   padding: 0.5rem 0;
+  line-height: 1.5;
 }
 
 .more {
-  color: DodgerBlue;
+  color: #4286f4;
 }
 
-/* Trial */
-.trial {
-  width: 60%;
-  height: 200px;
-  overflow: hidden;
-  padding: 2rem 1.5rem;
+
+/* Thesis */
+.thesis {
+  display: flex;
+  padding: 2rem 0;
 }
 
-.trial img {
+.thesis .media img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.thesis .class {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+ .video-title {
+   padding-top: 1.5rem;
+ }
+
+ .thesis h4 {
+   line-height: 1.5;
+ }
+
+ /* Footer */
+ footer {
+   justify-content: space-between;
+   padding: 1rem 2rem;
+   border-top: 1px solid lightgray;
+ }
+
+footer ul li {
+  padding-left: 0.5rem;
 }

@@ -114,7 +114,7 @@ nav ul li {
 
 
 
-/* Info */
+/* Info + shared styles for Thesis */
 .info {
   display: flex;
   padding: 2rem 0;
@@ -124,6 +124,16 @@ nav ul li {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.media .blurb {
+  line-height: 1.5;
+}
+
+.media .credit {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding-top: 2rem;
 }
 
 .info-blocks {
@@ -187,6 +197,37 @@ nav ul li {
  .thesis h4 {
    line-height: 1.5;
  }
+
+
+ /* Start learning */
+.courses-section {
+  background-color: lightgray;
+}
+
+.fields {
+  /* justify-content: space-between; */
+  padding: 2rem 4rem;
+}
+
+.field {
+  max-width: 30%;
+  /* height: 350px; */
+  line-height: 1.5;
+  background-color: white;
+}
+
+.field img {
+  width: 100%;
+  height: auto;
+}
+
+.courses-info {
+  padding: 1rem;
+}
+
+.courses-info span {
+  padding-bottom: 0.5rem;
+}
 
  /* Footer */
  footer {

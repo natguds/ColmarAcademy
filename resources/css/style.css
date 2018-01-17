@@ -5,25 +5,36 @@ html {
 
 body {
   min-width: 475px;
-  font-family: "Arial", sans-serif;
-  color: #303030;
+  font-family: 'Lato', sans-serif;
+  color: hsla(209, 10%, 24%, 1.0);
 }
 
+.main-content {
+  position: relative;
+  top: 4rem;
+} /* To offset fixed header */
+
+
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 2rem;
+  font-family: 'Neuton', serif;
+  font-size: 3rem;
   font-weight: bold;
-  padding-top: 2rem;
+  padding-top: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  padding: 1.5rem 0 1rem 0;
 }
 
 h4 {
   font-size: 1.5rem;
   font-weight: bold;
-  padding-bottom: 0.5rem;
 }
 
 .container {
@@ -42,6 +53,8 @@ h4 {
   text-align: center;
 }
 
+
+
 /* Header */
 header  {
   position: fixed;
@@ -50,15 +63,17 @@ header  {
   height: 4rem;
   z-index: 100;
   background-color: white;
+  box-shadow: 0 2px 10px #8F8F8F;
 }
 
 header .logo img {
-  height: 2rem;
+  height: 3rem;
   padding-left: 1.5rem;
 }
 
 header .logo {
-  font-size: 1.5rem;
+  font-family: 'Neuton', serif;
+  font-size: 1.75rem;
 }
 
 header .bold {
@@ -74,13 +89,12 @@ nav ul li {
 }
 
 
+
 /* Banner */
 .banner {
-  position: relative;
   align-items: center;
-  top: 4rem;
   padding: 2rem 0;
-  background-color: lightgray;
+  background-color: hsla(211, 0%, 80%, 1.0);
 }
 
 .banner .media img {
@@ -94,23 +108,24 @@ nav ul li {
 }
 
 .banner .button {
-  width: 70%;
+  width: 80%;
   color: white;
-  background-color: #303030;
-  padding: 1rem 0;
+  background-color: hsla(209, 10%, 24%, 1.0);
+  padding: 1.25rem 0;
+  font-size: 1.25rem;
   text-align: center;
 }
 
 .banner h4 {
-  width: 70%;
+  width: 80%;
+  font-weight: normal;
   line-height: 1.5;
   padding: 2rem 0;
 }
 
 .banner h1 {
-  width: 70%;
+  width: 80%;
 }
-
 
 
 
@@ -141,7 +156,7 @@ nav ul li {
 }
 
 .info-blocks .container {
-  border: 1px solid lightgray;
+  border: 1px solid hsla(211, 0%, 80%, 0.5);
 }
 
 .info-blocks img {
@@ -155,10 +170,6 @@ nav ul li {
   font-weight: bold;
 }
 
-.info h2 {
-  padding-bottom: 1.5rem;
-}
-
 .info-text {
   max-width: 65%;
 }
@@ -170,8 +181,42 @@ nav ul li {
 }
 
 .more {
-  color: #4286f4;
+  color: hsla(219, 100%, 60%, 1.0);
 }
+
+.info-blocks .container:hover {
+  background-color: hsla(211, 0%, 80%, 1.0);
+}
+
+
+
+/* Courses */
+.courses-section {
+ background-color: hsla(211, 0%, 80%, 1.0);
+}
+
+.fields {
+ flex-direction: column;
+ padding: 2rem 4rem;
+}
+
+.field {
+ width: 300px;
+ height: 350px;
+ line-height: 1.5;
+ background-color: white;
+ margin: 1rem;
+}
+
+.field img {
+ width: 100%;
+ height: auto;
+}
+
+.courses-info {
+ padding: 1rem;
+}
+
 
 
 /* Thesis */
@@ -180,7 +225,7 @@ nav ul li {
   padding: 2rem 0;
 }
 
-.thesis .media img {
+.thesis .media video {
   max-width: 100%;
   height: auto;
   display: block;
@@ -190,50 +235,19 @@ nav ul li {
   font-size: 0.75rem;
   font-weight: bold;
 }
- .video-title {
-   padding-top: 1.5rem;
- }
 
  .thesis h4 {
+   color: hsla(209, 10%, 24%, 1.0);
    line-height: 1.5;
  }
 
 
- /* Start learning */
-.courses-section {
-  background-color: lightgray;
-}
-
-.fields {
-  /* justify-content: space-between; */
-  padding: 2rem 4rem;
-}
-
-.field {
-  max-width: 30%;
-  /* height: 350px; */
-  line-height: 1.5;
-  background-color: white;
-}
-
-.field img {
-  width: 100%;
-  height: auto;
-}
-
-.courses-info {
-  padding: 1rem;
-}
-
-.courses-info span {
-  padding-bottom: 0.5rem;
-}
 
  /* Footer */
  footer {
    justify-content: space-between;
    padding: 1rem 2rem;
-   border-top: 1px solid lightgray;
+   border-top: 1px solid hsla(211, 0%, 80%, 1.0);
  }
 
 footer ul li {

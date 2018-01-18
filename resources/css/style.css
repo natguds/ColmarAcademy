@@ -53,6 +53,10 @@ h4 {
   text-align: center;
 }
 
+@media only screen and (max-width: 950px) {
+
+}
+
 
 
 /* Header */
@@ -88,19 +92,38 @@ nav ul li {
   padding-left: 1rem;
 }
 
+.mobile {
+  display: none;
+}
 
+@media only screen and (max-width: 950px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mobile img {
+    padding: 0 1rem;
+
+  }
+}
 
 /* Banner */
 .banner {
   align-items: center;
   padding: 2rem 0;
-  background-color: hsla(211, 0%, 80%, 1.0);
+  background-color: hsla(211, 0%, 90%, 1.0);
 }
 
 .banner .media img {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 .banner .start {
@@ -127,6 +150,29 @@ nav ul li {
   width: 80%;
 }
 
+.banner-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .banner {
+    display: none;
+  }
+
+  .banner-mobile {
+    display: block;
+  }
+
+  .media img {
+    width: 100%;
+  }
+
+
+  .banner .button {
+    width: 80%;
+    background-color: hsla(209, 10%, 60%, 1.0);
+  }
+}
 
 
 /* Info + shared styles for Thesis */
@@ -188,11 +234,23 @@ nav ul li {
   background-color: hsla(211, 0%, 80%, 1.0);
 }
 
+@media only screen and (max-width: 950px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+  }
+
+
+
+}
 
 
 /* Courses */
 .courses-section {
- background-color: hsla(211, 0%, 80%, 1.0);
+ background-color: hsla(211, 0%, 90%, 1.0);
 }
 
 .fields {
@@ -217,6 +275,42 @@ nav ul li {
  padding: 1rem;
 }
 
+.courses-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .courses-section {
+    display: none;
+  }
+
+  .courses-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+  }
+
+  .courses-mobile .buttons {
+    margin: 2rem 0;
+  }
+
+  .courses-mobile .button {
+    color: hsla(209, 10%, 24%, 1.0);
+    background-color: hsla(209, 10%, 90%, 1.0);
+    padding: 1.25rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    /* text-align: center; */
+  }
+}
+
+/* @media only screen and (max-width: 550px) {
+  .courses-mobile .button {
+    text-align: left;
+  }
+} */
 
 
 /* Thesis */
@@ -241,6 +335,26 @@ nav ul li {
    line-height: 1.5;
  }
 
+@media only screen and (max-width: 950px) {
+  .info-blocks {
+    display: none;
+  }
+
+  .video-title {
+    display: none;
+  }
+
+  .blurb {
+    display: none;
+  }
+
+  .media {
+    width: 100%;
+    padding: 0;
+  }
+
+
+}
 
 
  /* Footer */
